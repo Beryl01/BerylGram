@@ -1,0 +1,16 @@
+{% load bootstrap4 %}
+{% load static %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+{% block content %}
+<div class="card align-items-center">
+  <p class="icon text-center mb-15"><i class="far fa-bookmark"></i></p>
+  <h5 class="text-center">Save</h5>
+  <p class="text-center">Save photos and videos that you want to see again..</p>
+  <h4 class="text-center font-weight-bold">Start sharing your moments.</h4>
+  <p class="text-center">Get the app to share your first photo or video</p>
+  <div class="flex" class="pl-3 ml-3">
+    <img src="{% static 'images/1.png' %}" alt="" height="50">
+    <img src="{% static 'images/2.png' %}" alt="" height="50">
+  </div>
+</div>
+{% endblock %}

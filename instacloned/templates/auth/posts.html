@@ -1,0 +1,27 @@
+{% load bootstrap4 %}
+{% load static %}
+{% block content %}
+{% if images %}
+<div class="card-columns">
+  {% for image in images %}
+  <div class="card">
+    <img src="{{image.image.url}}" alt="" class="img-responsive card-img-top">
+    <div class="image-overlay">
+      <a href="{% url 'allcomments' image_id=image.id %}"><i
+          class="fas fa-comments">{{image.all_comments|length}}</i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href=""><i class="fas fa-heart">{{image.all_likes}} </i></a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div class="card align-items-center">
+  <h4 class="text-center text font-weight-bold">Start capturing and sharing your moments.</h4>
+  <p class="text text-center">Get the app to share your first photo or video</p>
+  <div id="flex" class="pl-3 ml-3">
+    <img src="{% static 'images/insta1.png' %}" alt="" height="50" width="180">
+    <img src="{% static 'images/insta2.png' %}" alt="" height="50">
+  </div>
+</div>
+{% endif %}
+{% endblock %}

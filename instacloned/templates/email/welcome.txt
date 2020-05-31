@@ -1,0 +1,4 @@
+Hello {{name}}
+
+Welcome to BerylGram for all time posting of your pics .Your friends will like and 
+    comment on your pics and have fun.

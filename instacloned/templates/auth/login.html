@@ -1,0 +1,48 @@
+{% extends 'auth/base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+{% block content %}
+{{block.super}}
+<style>
+  a[href] {
+    text-decoration: none;
+    color: rgb(8, 53, 204);
+  }
+</style>
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <img src="{% static 'images/3.png' %}" class="light" alt="">
+    </div>
+    <div class="col-md-4 border">
+      <div class="flex mt-3 pt-3 text-center">
+        <a class="smooth-scroll" href=""> <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2000px-Instagram_logo.svg.png"
+            id="logo-name" class="img-fluid pl-3">
+            <img src="https://bit.ly/3gFpUFE" alt="Avatar" width="100" height="100" class="" style="border-radius: 50%">
+      </div>
+      <form action="" method="POST" id="login">
+        {% csrf_token %}
+        <fieldset class="form-group">
+          <label for="" class="border-bottom mb-4 text-center">Login</label>
+          {% bootstrap_form form %}
+        </fieldset>
+        <div class="form-group">
+          <button class="btn btn-outline-info" type="submit">Login</button>
+        </div>
+      </form>
+      <div class="section text-center border-top pt-3">
+        <small class="text-muted">Don't have an account?
+          <a href="{% url 'register' %}" class="ml-2">Register</a></small>
+        <a href="{% url 'login' %}">Switch Account?</a>
+      </div>
+      <p class="text-center">Get the app.</p>
+      <div class="flex" class="pl-2 pt-3 mt-3">
+        <img src="{% static 'images/1.png' %}" alt="" height="50">
+        <img src="{% static 'images/2.png' %}" alt="" height="50">
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+{% endblock %}

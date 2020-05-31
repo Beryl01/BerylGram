@@ -27,7 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['berylgram.herokuapp.com', '127.0.0.1']
 
-CLOUDINARY_URL = config('CLOUDINARY_URL')
 # Application definition
 
 INSTALLED_APPS = [

@@ -13,6 +13,7 @@ urlpatterns = [
     re_path(r'^allcomments/(?P<image_id>\d+)$',main_views.allcomments,name='allcomments'),
     re_path(r'^post_profile/(?P<pk>\d+)$',main_views.others_profile,name='others_profile'),
     re_path(r'^follow/(?P<user_id>\d+)$',main_views.follow,name='follow'),
+    
  
 ]
 

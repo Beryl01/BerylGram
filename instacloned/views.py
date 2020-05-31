@@ -67,3 +67,10 @@ def search(request):
     return render(request,'main/search.html',{"users":the_users,"images":images})
   else:
     return render(request,'main/search.html')
+
+@login_required
+def others_profile(request,pk):
+  user = User.objects.get(pk = pk)
+  images = Image.objects.filter(user = user)
+  c_user = request.user
+  return render(request,'main/othersprofile.html',{"user":user,"images":images,"c_user":c_user})

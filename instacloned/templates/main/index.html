@@ -71,8 +71,8 @@
                 <strong>Likes</strong> </p>
             </div>
             <div>
-              <p class="text-muted ml-3"><strong>{{image.user.username}}
-                </strong> {{image.caption}}</p>
+              <span class="text-muted ml-3">{{image.user.username}}
+              </span> <strong>{{image.caption}}</strong>
             </div>
             {% if image.all_comments.count > 2 %}
             <div class="ml-3 ">
@@ -120,7 +120,7 @@
           </div>
           <div>
             <a href="{% url 'others_profile' us.id   %}">
-              <p class="ml-3 pt-2"><small>Follow </small>
+              <p class="ml-3 pt-2"><small class="follow user_id">Follow </small>
                 <strong>{{us.username}}</strong><small> is new to
                   instagram.</small></p>
               <span class="ml-3"><small>Friend on Facebook</small></span>

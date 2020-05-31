@@ -8,3 +8,5 @@ pycache/
 .vscode
 
 
+.pyre/
+migrations/

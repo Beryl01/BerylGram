@@ -27,3 +27,9 @@ def index(request):
   images = Image.display_images()
   users = User.objects.all()
   return render (request,'main/index.html',{"images":images,"comment_form":comment_form,"post":post_form,"all":users})
+
+@login_required
+def profile(request):
+  current_user = request.user
+  images = Image.objects.filter(user_id = current_user.id).all()
+  return render(request,'auth/profile.html',{"images":images,"current_user":current_user})

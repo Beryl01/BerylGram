@@ -33,3 +33,14 @@ def profile(request):
   current_user = request.user
   images = Image.objects.filter(user_id = current_user.id).all()
   return render(request,'auth/profile.html',{"images":images,"current_user":current_user})
+
+
+@login_required
+def post(request):
+  if request.method == 'POST':
+    post_form = postImageForm(request.POST,request.FILES) 
+    if post_form.is_valid():
+      the_post = post_form.save(commit = False)
+      the_post.user = request.user
+      the_post.save()
+  return redirect('index')

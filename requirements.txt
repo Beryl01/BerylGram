@@ -24,7 +24,9 @@ Django==3.0.6
 django-bootstrap==0.2.4
 django-bootstrap3==12.1.0
 django-bootstrap4==1.1.1
+django-crispy-forms==1.9.1
 django-registration==2.4.1
+django-tinymce==3.0.2
 dnspython==1.16.0
 dominate==2.5.1
 email-validator==1.1.0

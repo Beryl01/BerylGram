@@ -26,7 +26,7 @@ SECRET_KEY = 'oziwbd!g4sh3pm==4vd8v37%*l6pp+bw=r4d54ay(wz3wtcs48'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['berylgram.herokuapp.com', '127.0.0.1']
 
 
 # Application definition

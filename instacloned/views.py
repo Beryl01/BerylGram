@@ -56,3 +56,14 @@ def commenting(request,image_id):
       comment.image = image
       comment.save() 
   return redirect('index')
+
+@login_required
+def search(request):
+  if 'search_user' in request.GET and request.GET["search_user"]:
+    name = request.GET.get('search_user')
+    the_users = Profile.search_profiles(name)
+    images = Image.search_images(name)
+    print(the_users) 
+    return render(request,'main/search.html',{"users":the_users,"images":images})
+  else:
+    return render(request,'main/search.html')

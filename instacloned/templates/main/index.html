@@ -1,0 +1,160 @@
+{% extends 'main/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+{{block.super}}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-7">
+      {% for us in all %}
+      <div class="jumbo flex mt-3 pt-3 pl-3">
+        <div>
+          <a href="{% url 'others_profile' us.id  %}">
+            <img src="{{us.profile.profile_pic.url}}" class="rounded-circle border" 
+            alt="{{us.profile.name}}" width="50"
+              height="50"></a> 
+        </div>
+        <small><strong>{{us.username}}</strong></small>
+      </div>
+      {% endfor %}
+      {% if images %}
+      {% for image in images %}
+      <div class="row post{{image.pk}}">
+        <!-- Card -->
+        <div class="card promoting-card mt-4">
+          <!-- Card content -->
+          <div class="card-body d-flex flex-row">
+            <!-- Avatar -->
+            <a href="{% url 'others_profile' image.user.id %}">
+              <img src="{{image.user.profile.profile_pic.url}}" class="rounded-circle mr-3" height="50px" width="50px"
+                alt="avatar">
+            </a>
+            <!-- Content -->
+            <div>
+              <!-- Title -->
+              <a href="{% url 'others_profile' image.user.id %}">
+                {{image.user.username}} </a>
+              <!-- Subtitle -->
+              <span>{{image.name}}</span>
+            </div>
+            <div id="elipsis">
+              <a href="#" data-toggle="modal" data-target="#{{image.id}}">
+                <i class="fas fa-ellipsis-h"></i></a>
+            </div>
+          </div>
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top rounded-0" src="{{image.image.url}}" height="600px" width="500px"
+              alt="Card image cap">
+          </div>
+          <!-- Card content -->
+          <div class="card-body">
+            <div class="flex">
+              <div class="ml-3">
+                <i class="fas fa-heart like_u">
+                  <input type="hidden" class="post_id" value="{{image.pk}}">
+                </i>
+              </div>
+              <div class="ml-3">
+                <a href="{% url 'allcomments' image_id=image.id %}">
+                  <i class="far fa-comment"></i></a>
+              </div>
+              <div class="ml-3">
+                <a href="#"><i class="fas fa-share-alt"></i></a>
+              </div>
+              <div class="ml-3">
+                <a href="#"><i class="fas fa-bookmark"></i></a>
+              </div>
+            </div>
+            <div>
+              <p><strong class="ml-3 image_likes">{{image.all_likes}}</strong>
+                <strong>Likes</strong> </p>
+            </div>
+            <div>
+              <p class="text-muted ml-3"><strong>{{image.user.username}}
+                </strong> {{image.caption}}</p>
+            </div>
+            {% if image.all_comments.count > 2 %}
+            <div class="ml-3 ">
+              <a href="{% url 'allcomments' image_id=image.id %}" class="text-muted">View all
+                {{image.all_comments|length}} comments</a>
+            </div>
+            {% endif %}
+            {% for comment in image.all_comments|slice:"2" %}
+            <p class="ml-3"><span class="font-weight-bold">
+                {{comment.user.username}}</span> {{comment.comment}}</p>
+            {% endfor %}
+            <form action="{% url 'commenting' image_id=image.id %}" method="post">
+              {% csrf_token %}
+              <fieldset class="form-group">
+                {{comment_form|crispy}}
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-5" id="bar">
+      <div class="flex mt-3 pt-3 ml-3 pl-3">
+        <a href="{% url 'profile' %}">
+          <img src="{{user.profile.profile_pic.url}}" class="rounded-circle border" alt="{{user.profile.name}}"
+            width="80" height="80"></a>
+        <a href="{% url 'profile' %}">
+          <h2 class="ml-3 pt-2"><small>
+              <strong>{{user.username}}</strong></small></h2>
+        </a>
+      </div>
+      <div class="pt-3 mt-3 pl-3">
+        <h5 class="pt-3 mt-3 ml-3 pl-3 text-muted">
+          Suggestions for you.
+        </h5>
+        {% for us in all %}
+        <div class="flex mt-3 pt-3 pl-3">
+          <div>
+            <a href="{% url 'others_profile' us.id  %}">
+              <img src="{{us.profile.profile_pic.url}}" class="rounded-circle border" alt="{{us.profile.name}}"
+                width="70" height="70"></a>
+          </div>
+          <div>
+            <a href="{% url 'others_profile' us.id   %}">
+              <p class="ml-3 pt-2"><small>Follow </small>
+                <strong>{{us.username}}</strong><small> is new to
+                  instagram.</small></p>
+              <span class="ml-3"><small>Friend on Facebook</small></span>
+            </a>
+            <button type="button" value="{{user.pk}}"
+            class="user_id btn btn-outline-info float-right btn-sm">follow</button>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="post" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form action="{% url 'post' %}" method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <fieldset class="form-group">
+            {{post|crispy}}
+          </fieldset>
+          <div class="form-group">
+            <a href="{% url 'post' %}">
+              <button class="btn btn-outline-info" type="submit">Post</button>
+            </a>
+          </div>
+          <div class="modal-header " id="md">
+            <a href="#" data-dismiss="modal">cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

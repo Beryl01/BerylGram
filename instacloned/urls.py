@@ -9,6 +9,11 @@ urlpatterns = [
     path('index/',main_views.index,name='index'),
     path('profile/',main_views.profile,name='profile'),
     path('post/',main_views.post,name='post'),
+    re_path(r'^comment/(?P<image_id>\d+)$',main_views.commenting,name='commenting'),
+    re_path(r'^allcomments/(?P<image_id>\d+)$',main_views.allcomments,name='allcomments'),
+    re_path(r'^post_profile/(?P<pk>\d+)$',main_views.others_profile,name='others_profile'),
+    re_path(r'^follow/(?P<user_id>\d+)$',main_views.follow,name='follow'),
+ 
 ]
 
 if settings.DEBUG:

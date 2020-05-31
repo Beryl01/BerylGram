@@ -34,7 +34,6 @@ def profile(request):
   images = Image.objects.filter(user_id = current_user.id).all()
   return render(request,'auth/profile.html',{"images":images,"current_user":current_user})
 
-
 @login_required
 def post(request):
   if request.method == 'POST':
@@ -43,4 +42,17 @@ def post(request):
       the_post = post_form.save(commit = False)
       the_post.user = request.user
       the_post.save()
+  return redirect('index')
+
+@login_required
+def commenting(request,image_id):
+  c_form = CommentForm()
+  image = Image.objects.filter(pk = image_id).first()
+  if request.method == 'POST':
+    c_form = CommentForm(request.POST)
+    if c_form.is_valid():
+      comment = c_form.save(commit = False)
+      comment.user = request.user
+      comment.image = image
+      comment.save() 
   return redirect('index')

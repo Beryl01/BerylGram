@@ -19,3 +19,11 @@ def register(request):
   else:
     form = Registration()
   return render(request,'auth/registration.html',{"form":form})
+
+@login_required
+def index(request):
+  comment_form = CommentForm()
+  post_form = postImageForm()
+  images = Image.display_images()
+  users = User.objects.all()
+  return render (request,'main/index.html',{"images":images,"comment_form":comment_form,"post":post_form,"all":users})

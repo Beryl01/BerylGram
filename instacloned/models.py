@@ -85,3 +85,34 @@ class Profile(models.Model):
 
   def __str__(self):
     return self.bio  
+
+class Like(models.Model):
+  like = models.BooleanField()
+  image = models.ForeignKey(Image, on_delete = models.CASCADE,related_name='imagelikes')
+  user = models.ForeignKey(User,on_delete = models.CASCADE,related_name='userlikes')
+
+  def save_like(self):
+        self.save()
+
+  def __str__(self):
+    return self.like
+
+class Comment(models.Model):
+  comment = models.CharField(max_length = 300)
+  posted_on = models.DateTimeField(auto_now=True, null=True, blank=True)
+  image = models.ForeignKey(Image,on_delete = models.CASCADE,related_name='comments')
+  user = models.ForeignKey(User,on_delete = models.CASCADE,related_name='comments')
+  
+  def save_comment(self):
+        self.save()
+
+  def delete_comment(self):
+      self.delete()
+
+  @classmethod
+  def display_comments_by_imageId(cls,image_id):
+    comments = cls.objects.filter(image_id = image_id)
+    return comments
+
+  def __str__(self):
+    return self.comment    

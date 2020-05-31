@@ -1,0 +1,11 @@
+virtual/
+*.pyc
+
+pycache/
+
+.env
+
+.vscode
+
+requirements.txt
+

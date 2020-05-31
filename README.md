@@ -2,7 +2,7 @@
 #### By:
 Beryl Negesa Otieno
 
-<img src="./p.png">
+<img src="./pic.png">
 
 ### Description  
 The app is a photo sharing app which allows users to share, like, comment, follow and have followers in sharing daily activities.

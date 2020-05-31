@@ -1,0 +1,93 @@
+{% extends 'main/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-3 border">
+      <br>
+      <br>
+      <ul class="nav" id="my" role="tablist">
+        <li>
+          <a href="#edit_profile" class="nav-link text font-weight-bold" data-toggle="tab" role="tab"
+            aria-controls="posts" aria-selected="">Edit your profile
+          </a>
+        </li><br><br>
+        <li>
+          <a href="#deleteprofile" class="nav-link text font-weight-bold" data-toggle="tab" role="tab"
+            aria-controls="posts" aria-selected="">Delete Account
+          </a>
+        </li><br><br>
+        <li>
+          <a href="#" class="nav-link text font-weight-bold" data-toggle="tab" role="tab"
+            aria-controls="posts" aria-selected="">Change Password
+          </a>
+        </li><br><br>
+        <li>
+          <a href="#" class="nav-link text font-weight-bold" data-toggle="tab" role="tab"
+            aria-controls="posts" aria-selected="">Apps and Websites
+          </a>
+        </li><br><br>
+        <li>
+          <a href="#" class="nav-link text font-weight-bold" data-toggle="tab" role="tab"
+            aria-controls="posts" aria-selected="">Email and SMS
+          </a>
+        </li><br><br>
+        <li>
+          <a href="#" class="nav-link text font-weight-bold" data-toggle="tab" role="tab"
+            aria-controls="posts" aria-selected="">Push Notifications
+          </a>
+        </li><br><br>
+        <li>
+          <a href="#" class="nav-link text font-weight-bold" data-toggle="tab" role="tab"
+            aria-controls="posts" aria-selected="">Manage Contacts
+          </a>
+        </li><br><br>
+        <li>
+          <a href="#" class="nav-link text font-weight-bold" data-toggle="tab" role="tab"
+            aria-controls="posts" aria-selected="">Privacy and Security
+          </a>
+        </li><br><br>
+        <li>
+          <a href="#" class="nav-link text font-weight-bold" data-toggle="tab" role="tab"
+            aria-controls="posts" aria-selected="">Login Activities
+          </a>
+        </li><br><br>
+      </ul>
+    </div>
+    <div class="col-md-5 border">
+      <div class="flex">
+        <div>
+          <img src="{{user.profile.profile_pic.url}}" class="rounded-circle border" alt="img" width="80" height="80">
+        </div>
+        <div>
+          <h2 class="text ml-3 pt-2"><small><strong>{{user.username}}</strong></small></h2>
+        </div>
+      </div>
+      <hr>
+      <div class="tab-content" id="myContent">
+        <div class="tab-pane fade show active " id="edit_profile" role="tabpanel">
+          <div class="tab-content" id="myContent">
+            <div class="tab-pane fade show active " id="edit_profile" role="tabpanel">
+              <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                  <label for="" class="border-bottom mb-4 text-center">Edit profile</label>
+                  {{u_form|crispy}}
+                  {{p_form|crispy}}
+                </fieldset>
+                <div class="form-group">
+                  <button class="btn btn-outline-info" type="submit">Update</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div><br>
+{% endblock %}

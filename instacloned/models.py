@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from tinymce.models import HTMLField
 from django.dispatch import receiver
 import datetime as dt
 from django.db.models.signals import post_save
@@ -115,4 +116,7 @@ class Comment(models.Model):
     return comments
 
   def __str__(self):
-    return self.comment    
+    return self.comment
+
+
+

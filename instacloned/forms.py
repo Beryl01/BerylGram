@@ -9,6 +9,22 @@ class Registration(UserCreationForm):
     model = User
     fields = ['username','email','password1','password2']
 
+class postImageForm(forms.ModelForm):
+  class Meta:
+    model = Image
+    fields = ['image','name','caption']
+
+class UpdateUser(forms.ModelForm):
+  email = forms.EmailField()
+  class Meta:
+    model = User
+    fields = ['username','email']
+
+class UpdateProfile(forms.ModelForm):
+  class Meta:
+    model = Profile
+    fields = ['profile_pic','bio']
+
 class CommentForm(forms.ModelForm):
   class Meta:
     model = Comment

@@ -7,10 +7,8 @@ class ImageTestClass(TestCase):
     def setUp(self):
         self.new_user = User(username = "beryl", email = "beryl@gmail.com", password = "show001")
         self.new_user.save()
-
         self.new_profile = Profile(photo = '/posts', bio = "hello world", user = self.new_user)
         self.new_profile.save()
-
         self.new_image = Image(picture = '/posts', caption = 'hello new world', posted = '05/30/2020', profile = self.new_profile)
         self.new_image.save_image()
 
@@ -43,16 +41,15 @@ class ImageTestClass(TestCase):
         self.assertTrue(pk=id)
 
 class ProfileTestClass(TestCase):
+    def setUp(self):
         self.new_user = User(username = "beryl", email = "beryl@gmail.com", password = "show001")
         self.new_user.save()
-
         self.new_profile = Profile(photo = '/posts', bio = "hello world", user = self.new_user)
         self.new_profile.save()
 
     def tearDown(self):
         Profile.objects.all().delete()
 
-    # Testing instance
     def test_instance(self):
         self.assertTrue(isinstance(self.new_profile, Profile))
 
@@ -70,10 +67,8 @@ class CommentsTestClass(TestCase):
     def setUp(self):
         self.new_user = User(username = "beryl", email = "beryl@gmail.com", password = "show001")
         self.new_user.save()
-
         self.new_profile = Profile(photo = '/posts', bio = "hello world", user = self.new_user)
         self.new_profile.save()
-
         self.new_comment = Comments(comment='hello django 3', image = self.image, user = self.new_profile, posted = auto_now())
 
     def test_instance(self):

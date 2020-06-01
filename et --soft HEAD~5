@@ -1,0 +1,234 @@
+* [33mcommit 31b8a29b0959bc2ebabd69536c94306817802673[m[33m ([m[1;36mHEAD -> [m[1;32mdevelopment[m[33m, [m[1;31morigin/development[m[33m)[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Mon Jun 1 00:56:47 2020 +0300
+[31m|[m 
+[31m|[m     Working on cloudinary
+[31m|[m 
+* [33mcommit b2ff884551d305d190669f1ab1e5848da9b4fe38[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Mon Jun 1 00:49:31 2020 +0300
+[31m|[m 
+[31m|[m     Working on cloudinary
+[31m|[m 
+* [33mcommit dc66c86c3b1b5cc9559e7fad7cb2b77b309860a7[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Mon Jun 1 00:40:41 2020 +0300
+[31m|[m 
+[31m|[m     Working on cloudinary
+[31m|[m 
+* [33mcommit 95a96c470a4a6e90818dc92e2f33341a27c9c54f[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Mon Jun 1 00:39:08 2020 +0300
+[31m|[m 
+[31m|[m     Working on cloudinary
+[31m|[m 
+* [33mcommit 6188722de5659bacec0819b6024c76bbed65d894[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Mon Jun 1 00:33:01 2020 +0300
+[31m|[m 
+[31m|[m     Working on cloudinary
+[31m|[m 
+* [33mcommit 611a91f518f7563c164a8c6324623a389cee82db[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Mon Jun 1 00:28:14 2020 +0300
+[31m|[m 
+[31m|[m     Working on cloudinary
+[31m|[m 
+* [33mcommit 66164653a6e028d74e32630f50ef485cc8bc93de[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 16:35:24 2020 +0300
+[31m|[m 
+[31m|[m     Deploying the site
+[31m|[m 
+* [33mcommit 8e1126d746ee62a12e7b2d9645aaaade8b52c783[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 16:31:19 2020 +0300
+[31m|[m 
+[31m|[m     Added Read Me documentation of the project with detailed user stories and BDD
+[31m|[m 
+* [33mcommit c41a0fff4480a516984394528d3917016988aa9b[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 16:28:00 2020 +0300
+[31m|[m 
+[31m|[m     Added Read Me documentation of the project with detailed user stories and BDD
+[31m|[m 
+* [33mcommit e3aadfefc67cb2b3a4d9a9545ea2def5255d33aa[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 16:24:10 2020 +0300
+[31m|[m 
+[31m|[m     Added Read Me documentation of the project with detailed user stories and BDD
+[31m|[m 
+* [33mcommit e97a315cff173a837733a3878f219d97446e36e8[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 16:21:32 2020 +0300
+[31m|[m 
+[31m|[m     Added Read Me documentation of the project with detailed user stories and BDD
+[31m|[m 
+* [33mcommit 3b81140193a4b8bcae6473d35b12d0a10420aed3[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 16:12:00 2020 +0300
+[31m|[m 
+[31m|[m     Added Read Me documentation of the project with detailed user stories and BDD
+[31m|[m 
+* [33mcommit e7dab73e8b4d2280553f40006c78362002ed175c[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 15:40:03 2020 +0300
+[31m|[m 
+[31m|[m     Added Read Me documentation of the project with detailed user stories and BDD
+[31m|[m 
+* [33mcommit ba046e75ab8a364d90e45df70a856440048e0083[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:57:12 2020 +0300
+[31m|[m 
+[31m|[m     install bootstrap and customized static files, style.css and images for stylying
+[31m|[m 
+* [33mcommit e30c77963069c849ceae625e9308f99dd4189754[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:44:17 2020 +0300
+[31m|[m 
+[31m|[m     install bootstrap and customized static files, style.css and images for stylying
+[31m|[m 
+* [33mcommit 99d322dfbe80d6bf3ae54aea5ca93a9ece8f803c[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:41:11 2020 +0300
+[31m|[m 
+[31m|[m     install bootstrap and customized static files, style.css and images for stylying
+[31m|[m 
+* [33mcommit 4501b9600eb66f723a36e03f0e92658347baa3e4[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:39:08 2020 +0300
+[31m|[m 
+[31m|[m     install bootstrap and customized static files, style.css and images for stylying
+[31m|[m 
+* [33mcommit c6581eed74919ba00de4a99f88ff5c246485a692[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:38:02 2020 +0300
+[31m|[m 
+[31m|[m     install bootstrap and customized static files, style.css and images for stylying
+[31m|[m 
+* [33mcommit b3161b6582756b77f9b07871ade20a13981aeb07[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:36:11 2020 +0300
+[31m|[m 
+[31m|[m     worked on route and html to view other peoples profile
+[31m|[m 
+* [33mcommit dec292c0643d8a0047f98122da92623fc76a43dc[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:32:56 2020 +0300
+[31m|[m 
+[31m|[m     worked on search function and search html
+[31m|[m 
+* [33mcommit 935987f4a21c31fd63cfb3e003f79ce700cdf48b[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:30:47 2020 +0300
+[31m|[m 
+[31m|[m     worked on comment section and othr routes on index page
+[31m|[m 
+* [33mcommit 8d875b2813e7c9b1d7eb7e4105fa45e6c4565f08[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:26:54 2020 +0300
+[31m|[m 
+[31m|[m     registered models to admin, made migrations and created superuser
+[31m|[m 
+* [33mcommit e5397f190494946eabd2804443c543d22985d931[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:25:02 2020 +0300
+[31m|[m 
+[31m|[m     created include paths and htmls for profile page, post,save,tagged,igtv
+[31m|[m 
+* [33mcommit 1296e0092fddc15f814384a9bb528ca243fa1755[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:23:12 2020 +0300
+[31m|[m 
+[31m|[m     created include paths and htmls for profile page, post,save,tagged,igtv
+[31m|[m 
+* [33mcommit 08aacfdd713804524cc6935d404cdecf7ea85f64[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:19:20 2020 +0300
+[31m|[m 
+[31m|[m     created comments and likes models and migrations to db
+[31m|[m 
+* [33mcommit 73ef6ed2e19afdd1614d0b369857eb5791e4d12b[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:16:01 2020 +0300
+[31m|[m 
+[31m|[m     created profile route, url and profile.html
+[31m|[m 
+* [33mcommit fe4e07e08707ddbb66717f33f8a961458366c6ad[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:13:38 2020 +0300
+[31m|[m 
+[31m|[m     created profile model and migrations
+[31m|[m 
+* [33mcommit 754bc59dec4e564190fd9a6a20711f5b65fe0e73[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:11:14 2020 +0300
+[31m|[m 
+[31m|[m     created Route and models for index page
+[31m|[m 
+* [33mcommit d47000e2df58878016f00870a384fd8bda03b9fe[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:07:16 2020 +0300
+[31m|[m 
+[31m|[m     created image model and migrations
+[31m|[m 
+* [33mcommit df267ecc7da2b4ad3ba3079afa5cc683c626d53f[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:05:35 2020 +0300
+[31m|[m 
+[31m|[m     create main templates, base and index.htmls
+[31m|[m 
+* [33mcommit 0dd4be00ad8183684e523fe2be348f1014ab313b[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:04:05 2020 +0300
+[31m|[m 
+[31m|[m     create email templates, mail.py
+[31m|[m 
+* [33mcommit 5c0e6c6aea2f74cd0ca05b94f05e2a889560beb2[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:02:54 2020 +0300
+[31m|[m 
+[31m|[m     create email templates
+[31m|[m 
+* [33mcommit 9463ddc5a86cbb1c18a3ef8453b015a0793238d3[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:01:55 2020 +0300
+[31m|[m 
+[31m|[m     created auth routes, registration and login logout redirect
+[31m|[m 
+* [33mcommit 75fc61bc8603f755cdb6613bdb1f82979c4742fc[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 14:00:11 2020 +0300
+[31m|[m 
+[31m|[m     created auth routes, registration and login logout redirect
+[31m|[m 
+* [33mcommit fff6e24aec42467ea9f0456a3013b1f651c83bf8[m
+[31m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[31m|[m Date:   Sun May 31 13:54:17 2020 +0300
+[31m|[m 
+[31m|[m     create auth templates, login, register, logout
+[31m|[m   
+*   [33mcommit ebadc4a6376771580ae597d4f392c2ecaf1c8fb8[m
+[32m|[m[33m\[m  Merge: 0e232aa 297f2ee
+[32m|[m [33m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[32m|[m [33m|[m Date:   Sun May 31 13:47:14 2020 +0300
+[32m|[m [33m|[m 
+[32m|[m [33m|[m     Merge branch 'master' into development
+[32m|[m [33m|[m 
+[32m|[m * [33mcommit 297f2eebf1e328f766b96e56d8e54f7351894fad[m[33m ([m[1;32mmaster[m[33m)[m
+[32m|[m [33m|[m Author: Beryl01 <berylnegesa@gmail.com>
+[32m|[m [33m|[m Date:   Sun May 31 13:42:03 2020 +0300
+[32m|[m [33m|[m 
+[32m|[m [33m|[m     Django startproject and app and first initializing of the project
+[32m|[m [33m|[m 
+* [33m|[m [33mcommit 0e232aa9b9d7a406986d85d736e8d6468d2ef259[m
+[33m|[m[33m/[m  Author: Beryl01 <berylnegesa@gmail.com>
+[33m|[m   Date:   Sun May 31 13:45:59 2020 +0300
+[33m|[m   
+[33m|[m       Installed required dependancies and created requiremnts.txt
+[33m|[m 
+* [33mcommit 75332aa2f18d717c8e9268bb4322fb6839a0468f[m
+  Author: Beryl01 <berylnegesa@gmail.com>
+  Date:   Sun May 31 13:27:29 2020 +0300
+  
+      Django startproject and app and first initializing of the project

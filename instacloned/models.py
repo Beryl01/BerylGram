@@ -16,6 +16,9 @@ class Image(models.Model):
   def save_image(self):
      self.save()
 
+  def update_caption(self):
+     self.update()   
+
   def delete_post(self):
     self.delete()   
 
@@ -59,6 +62,9 @@ class Profile(models.Model):
 
   def save_profile(self):
       self.save()
+
+  def update_profile(self):
+     self.update()     
 
   def delete_profile(self):
       self.delete()  

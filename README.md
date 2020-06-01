@@ -1,4 +1,4 @@
-# Pics Art
+# BerylGram
 #### By:
 Beryl Negesa Otieno
 
